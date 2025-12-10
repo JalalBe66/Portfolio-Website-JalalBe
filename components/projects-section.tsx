@@ -11,9 +11,9 @@ const projects = [
       "Application web complète avec authentification (Laravel Fortify + LDAP), gestion avancée des rôles (T2FAdmin, Administrateur, Superviseur, Chef d'agence), suivi des interventions, traitement des réclamations, automatisation des rapports (scheduler), et notifications dynamiques.",
     technologies: ["Laravel", "Fortify", "LDAP", "MySQL", "Blade"],
     type: "Freelance",
-    href : "https://espaceclients.ma",
+    href: "https://espaceclients.ma",
     featured: true,
-    github:""
+    github: "https://github.com/JalalBe66/TECHINTER"
   },
   {
     title: "SDO",
@@ -23,7 +23,7 @@ const projects = [
     technologies: ["Laravel", "MySQL", "Git", "SonarQube"],
     type: "Stage",
     featured: false,
-    github:"https://github.com/JalalBe66/Document-Sharing"
+    github: "https://github.com/JalalBe66/Document-Sharing"
   },
   {
     title: "ESL",
@@ -33,8 +33,9 @@ const projects = [
     technologies: ["React", "AI", "JavaScript"],
     type: "Personnel",
     featured: false,
-    github:""
-    
+    github: "https://github.com/JalalBe66/Smart-Context",
+    href: "https://jalalbe66.github.io/Smart-Context/"
+
   },
 ]
 
@@ -51,11 +52,10 @@ export function ProjectsSection() {
             <div
               key={project.title}
               onClick={() => setSelectedProject(project)}
-              className={`group cursor-pointer p-6 border transition-all duration-300 hover:-translate-y-1 ${
-                project.featured
-                  ? "bg-accent/10 border-accent lg:col-span-2 lg:row-span-2"
-                  : "bg-card border-border hover:border-accent"
-              }`}
+              className={`group cursor-pointer p-6 border transition-all duration-300 hover:-translate-y-1 ${project.featured
+                ? "bg-accent/10 border-accent lg:col-span-2 lg:row-span-2"
+                : "bg-card border-border hover:border-accent"
+                }`}
             >
               {project.featured && (
                 <span className="inline-block font-mono text-xs text-background bg-accent px-2 py-1 mb-4">
@@ -64,9 +64,8 @@ export function ProjectsSection() {
               )}
               <span className="font-mono text-xs text-muted-foreground uppercase tracking-wider">{project.type}</span>
               <h3
-                className={`font-bold text-foreground mt-2 group-hover:text-accent transition-colors ${
-                  project.featured ? "text-2xl" : "text-xl"
-                }`}
+                className={`font-bold text-foreground mt-2 group-hover:text-accent transition-colors ${project.featured ? "text-2xl" : "text-xl"
+                  }`}
               >
                 {project.title}
               </h3>
