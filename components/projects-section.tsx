@@ -11,7 +11,9 @@ const projects = [
       "Application web complète avec authentification (Laravel Fortify + LDAP), gestion avancée des rôles (T2FAdmin, Administrateur, Superviseur, Chef d'agence), suivi des interventions, traitement des réclamations, automatisation des rapports (scheduler), et notifications dynamiques.",
     technologies: ["Laravel", "Fortify", "LDAP", "MySQL", "Blade"],
     type: "Freelance",
+    href : "https://espaceclients.ma",
     featured: true,
+    github:""
   },
   {
     title: "SDO",
@@ -21,6 +23,7 @@ const projects = [
     technologies: ["Laravel", "MySQL", "Git", "SonarQube"],
     type: "Stage",
     featured: false,
+    github:"https://github.com/JalalBe66/Document-Sharing"
   },
   {
     title: "ESL",
@@ -30,6 +33,8 @@ const projects = [
     technologies: ["React", "AI", "JavaScript"],
     type: "Personnel",
     featured: false,
+    github:""
+    
   },
 ]
 
@@ -118,14 +123,14 @@ export function ProjectsSection() {
               </div>
 
               <div className="flex gap-4">
-                <button className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors font-mono text-sm">
+                <a target="_blank" href={selectedProject.github} className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors font-mono text-sm">
                   <Github size={18} />
                   Code Source
-                </button>
-                <button className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors font-mono text-sm">
+                </a>
+                <a href={selectedProject.href} target="_blanc" className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors font-mono text-sm">
                   <ExternalLink size={18} />
                   Voir le Projet
-                </button>
+                </a>
               </div>
             </div>
           </div>

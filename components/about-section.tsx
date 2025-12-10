@@ -7,7 +7,7 @@ export function AboutSection() {
 
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Je suis <span className="text-foreground font-semibold">Jalal Belych</span>, développeur full-stack
+              Je suis <span className=" font-semibold text-[#cfa067]">Jalal Belych</span>, développeur full-stack
               Laravel freelance basé à Casablanca. Passionné par le développement web, l'architecture MVC,
               l'optimisation des bases de données, la création d'API REST, la sécurité et la construction d'applications
               fiables et performantes.

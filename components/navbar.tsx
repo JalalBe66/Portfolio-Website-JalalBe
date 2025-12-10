@@ -34,7 +34,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-accent font-mono text-xl font-bold tracking-tight">
-            {"<JB />"}
+            <img src="/icon-light-32x32.jpeg" alt="Jalal Belych Logo"  width="50px"/>
           </Link>
 
           {/* Desktop Navigation */}

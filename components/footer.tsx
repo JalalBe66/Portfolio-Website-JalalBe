@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <span className="text-accent font-mono text-lg">{"<JB />"}</span>
+            <img src="/icon-light-32x32.jpeg" alt="Jalal Belych Logo" width="50px" />
             <span className="text-muted-foreground">© {new Date().getFullYear()} Jalal Belych</span>
           </div>
 

@@ -133,7 +133,7 @@ export function ContactSection() {
                   <Github size={20} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/jalal-belych-401876301/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 flex items-center justify-center border border-border text-muted-foreground hover:border-accent hover:text-accent transition-colors"

@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background gradient with tech symbols */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card">
+      <div className="absolute inset-0  from-background via-background to-card">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-10 text-accent text-6xl font-mono">{"{ }"}</div>
           <div className="absolute top-40 right-20 text-accent text-4xl font-mono">{"</>"}</div>
@@ -20,12 +20,12 @@ export function HeroSection() {
           {/* Text Content */}
           <div className="space-y-6 animate-fade-in">
             <p className="font-mono text-accent text-sm tracking-widest uppercase">Bonjour, je suis</p>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground">JALAL BELYCH</h1>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground my-20 ">JALAL BELYCH</h1>
             <p className="text-xl text-muted-foreground font-mono">
-              Développeur Full-Stack Laravel & Spécialiste Backend PHP
+              Développeur Full-Stack Laravel <span className="text-[#ce9f67]">Freelancer</span>
             </p>
-            <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Building secure, scalable Laravel applications with passion for clean code and optimal performance.
+            <p className="text-xl font-semibold text-[#ce9f67] my-4 max-w-lg leading-relaxed">
+              ''From idea to production — Laravel is my path''
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -37,7 +37,7 @@ export function HeroSection() {
                 Me Contacter
               </Link>
               <a
-                href="/cv-jalal-belych.pdf"
+                href="/JalalBelychCV3.pdf"
                 download
                 className="inline-flex items-center gap-2 border border-accent text-accent px-6 py-3 font-mono text-sm uppercase tracking-wider hover:bg-accent hover:text-background transition-colors"
               >
