@@ -37,7 +37,7 @@ export function HeroSection() {
                 Me Contacter
               </Link>
               <a
-                href="/JalalBelychCV3.pdf"
+                href="./JalalBelychCV3.pdf"
                 download
                 className="inline-flex items-center gap-2 border border-accent text-accent px-6 py-3 font-mono text-sm uppercase tracking-wider hover:bg-accent hover:text-background transition-colors"
               >
@@ -53,7 +53,7 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-accent/20 translate-x-4 translate-y-4" />
               <div className="relative w-full h-full bg-card overflow-hidden">
                 <Image
-                  src="/images/mypf.png"
+                  src="./images/mypf.png"
                   alt="Jalal Belych - Développeur Full-Stack"
                   fill
                   className="object-cover object-top"

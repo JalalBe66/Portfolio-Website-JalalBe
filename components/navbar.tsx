@@ -27,14 +27,13 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-accent font-mono text-xl font-bold tracking-tight">
-            <img src="/icon-light-32x32.jpeg" alt="Jalal Belych Logo"  width="50px"/>
+            <img src="./icon-light-32x32.jpeg" alt="Jalal Belych Logo" width="50px" />
           </Link>
 
           {/* Desktop Navigation */}
